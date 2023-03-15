@@ -1,11 +1,10 @@
 import React from 'react'
-
-const WeatherInfoPanel = () => {
+import InfoPanelHead from './InfoPanelHead'
+const WeatherInfoPanel = ({ data }) => {
     return (
-        <div>
-            WeatherInfoPanel
-
-        </div>
+        <div >
+            <InfoPanelHead data={data} />
+        </div >
     )
 }
 
