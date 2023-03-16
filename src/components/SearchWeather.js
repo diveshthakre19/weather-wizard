@@ -8,9 +8,13 @@ const SearchWeather = () => {
     const [wetherData, setWeatherData] = useState(false)
 
     async function fetchWetherInfo(city) {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
-        const data = await response.json()
-        setWeatherData(data)
+        try {
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
+            const data = await response.json()
+            setWeatherData(data)
+        } catch (error) {
+            console.log(error)
+        }
     }
     return (
         <>
