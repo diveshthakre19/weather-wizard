@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import WeatherInfoPanel from './WeatherInfoPanel'
-
+const API_KEY = process.env.REACT_APP_API_KEY
 
 const SearchWeather = () => {
-    const API_KEY = "87aad6953e179c8eb5fadfa46c38e407"
+
     const [city, setCity] = useState(false)
     const [wetherData, setWeatherData] = useState(false)
 
