@@ -5,7 +5,6 @@ import humidityIcon from "../assets/icons/humidity.png"
 import minTempIcon from "../assets/icons/minTemp.png"
 import TempIcon from "../assets/icons/temp.png"
 import visibilityIcon from "../assets/icons/visibility.png"
-
 import pressureIcon from "../assets/icons/pressure.png"
 import windIcon from "../assets/icons/wind.png"
 // import cloudIcon from "../assets/icons/cloud.png"

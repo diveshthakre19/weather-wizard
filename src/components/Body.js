@@ -1,12 +1,9 @@
 import React from 'react'
-import SearchWeather from './SearchWeather'
-
+import { Outlet } from 'react-router-dom'
 const Body = () => {
     return (
-        <div className=' min-h-screen bg-blue-300 flex flex-col items-center'>
-
-            <SearchWeather />
-
+        <div className=' min-h-screen bg-blue-300 flex flex-col items-center justify-center'>
+            <Outlet />
         </div>
     )
 }

@@ -1,7 +1,7 @@
-import './App.css';
-import Body from './components/Body';
-import Footer from './components/Footer';
-import Headder from './components/Headder';
+import "./App.css";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Headder from "./components/Headder";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Headder />
       <Body />
       <Footer />
-
     </div>
   );
 }
