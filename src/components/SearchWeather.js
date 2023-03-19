@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Shimmer from './Shimmer'
 import WeatherInfoPanel from './WeatherInfoPanel'
 const API_KEY = process.env.REACT_APP_API_KEY
 
@@ -23,7 +24,9 @@ const SearchWeather = () => {
                     fetchWetherInfo(city)
                 }} type='submit' className='p-2 bg-blue-400'>🔍</button>
             </form>
-            <WeatherInfoPanel data={wetherData} />
+
+            {wetherData ? <WeatherInfoPanel data={wetherData} /> : <Shimmer />}
+
         </>
     )
 }
