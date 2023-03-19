@@ -3,7 +3,7 @@ import InfoPanelBody from './InfoPanelBody'
 import InfoPanelHead from './InfoPanelHead'
 const WeatherInfoPanel = ({ data }) => {
     return (
-        <div className='w-3/5 h-[70vh] flex flex-col space-y-4 rounded-xl bg-slate-200 items-center' >
+        <div className=' mt-8 flex flex-col container w-[100vw] md:w-[80vw] space-y-4 rounded-xl shadow-2xl bg-slate-200 items-center' >
             <InfoPanelHead data={data} />
             <InfoPanelBody data={data} />
         </div >

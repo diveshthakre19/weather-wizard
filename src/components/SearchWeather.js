@@ -17,15 +17,16 @@ const SearchWeather = () => {
             console.log(error)
         }
     }
+    console.log(wetherData?.message);
     return (
         <>
             <form onSubmit={(e) => e.preventDefault()} className='my-4'>
-                <input onChange={(e) => { setCity(e.target.value) }} className='py-2 px-4 w-96' placeholder='Enter city for wether Update......' /> <button onClick={() => {
+                <input onChange={(e) => { setCity(e.target.value) }} className='py-2 px-4 w-64 md:w-96' placeholder='Enter city for wether Update......' /> <button onClick={() => {
                     fetchWetherInfo(city)
                 }} type='submit' className='p-2 bg-blue-400'>🔍</button>
             </form>
 
-            {wetherData ? <WeatherInfoPanel data={wetherData} /> : <Shimmer />}
+            {wetherData?.name ? <WeatherInfoPanel data={wetherData} /> : ((!wetherData?.message) ? <Shimmer /> : <Shimmer allow={wetherData?.message} />)}
 
         </>
     )
