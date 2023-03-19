@@ -19,7 +19,7 @@ const InfoPanelBody = ({ data }) => {
             <InfoCard image={windIcon} value={data?.wind?.speed} name={"Min-Temp"} unit={"m/s"} />
             <InfoCard image={minTempIcon} value={data?.main?.temp_min} name={"Min-Temp"} unit={"°C"} />
             <InfoCard image={TempIcon} value={data?.main?.temp_max} name={"Max-Temp"} unit={"°C"} />
-            <InfoCard image={pressureIcon} value={data?.main?.pressure} name={"pressure"} unit={"mb"} />
+            <InfoCard image={pressureIcon} value={data?.main?.pressure} name={"Pressure"} unit={"mb"} />
             <InfoCard image={humidityIcon} value={data?.main?.humidity} name={"Humidity"} unit={"%"} />
             <InfoCard image={cloudIcon} value={data?.clouds?.all} name={"Clouds"} unit={"%"} />
             <InfoCard image={cloudIcon} value={data?.clouds?.all} name={"Clouds"} unit={"%"} />
