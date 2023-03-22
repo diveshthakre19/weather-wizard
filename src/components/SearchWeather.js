@@ -17,7 +17,6 @@ const SearchWeather = () => {
             console.log(error)
         }
     }
-    console.log(wetherData?.message);
     return (
         <>
             <form onSubmit={(e) => e.preventDefault()} className='my-4'>

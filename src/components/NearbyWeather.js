@@ -25,7 +25,6 @@ const NearbyWeather = () => {
 
     function getCoordinates() {
         const localCoordinates = sessionStorage.getItem("coordinates")
-        console.log(localCoordinates)
         if (!localCoordinates) {
 
             function grantLocation() {
@@ -36,8 +35,6 @@ const NearbyWeather = () => {
                 }
             }
             function showPosition(position) {
-                console.log(position.coords.latitude);
-                console.log(position.coords.longitude);
                 const userCoordinates = {
                     lat: position.coords.latitude,
                     lon: position.coords.longitude,
